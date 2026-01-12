@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Pricing | FacultyVA</title>
+
+  <!-- Favicons (keep if you uploaded these files) -->
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; color:#333; background:#fff; }
+    a { color: inherit; }
+
+    /* Top nav */
+    .nav {
+      background:#0D1A26;
+      color:#fff;
+      padding: 14px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .nav-left { display:flex; align-items:center; gap:12px; }
+    .nav img { height: 38px; width:auto; }
+    .nav-links { display:flex; gap:16px; flex-wrap:wrap; }
+    .nav-links a { color:#fff; text-decoration:none; font-weight:600; opacity:0.95; }
+    .nav-links a:hover { text-decoration:underline; }
+
+    header { background:#E6EEF5; padding: 50px 20px; }
+    .wrap { max-width: 1000px; margin: auto; }
+    h1 { margin: 0 0 10px; color:#0D1A26; font-size: 40px; }
+    p.lead { margin: 0; font-size: 18px; color:#4A4A4A; line-height:1.5; }
+
+    .section { padding: 50px 20px; }
+    h2 { color:#0D1A26; font-size: 28px; margin:0 0 18px; }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; }
+    .card { border:1px solid #ddd; border-radius:12px; padding:20px; background:#fafafa; }
+    .card h3 { margin:0 0 10px; color:#0D1A26; }
+    .card ul { margin: 10px 0 0; padding-left:18px; color:#4A4A4A; line-height:1.6; }
+
+    .price { font-size: 30px; font-weight:800; color:#0D1A26; margin: 10px 0 0; }
+    .tag { display:inline-block; background:#1C8C94; color:#fff; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; margin-bottom:10px; }
+
+    .cta { text-align:center; padding: 60px 20px; background:#0D1A26; color:#fff; }
+    .cta h2 { color:#fff; }
+    .btn {
+      display:inline-block;
+      background:#1C8C94;
+      color:#fff;
+      padding:14px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:800;
+      margin-top: 16px;
+    }
+    .btn:hover { opacity:0.95; }
+
+    .faq .card { background:#fff; }
+    .faq strong { color:#0D1A26; }
+
+    footer { background:#0D1A26; color:#fff; text-align:center; padding:20px; }
+    footer a { color:#fff; }
+
+    @media (max-width:520px){
+      h1 { font-size: 32px; }
+      .nav { flex-direction:column; align-items:flex-start; }
+      .nav-links { gap:12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-left">
+      <!-- If you uploaded logo.png -->
+      <img src="logo.png" alt="FacultyVA Logo">
+      <div style="font-weight:800;">FacultyVA</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services & Pricing</a>
+      <a href="mailto:hello@facultyva.com">Contact</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <h1>Services & Pricing</h1>
+      <p class="lead">
+        FacultyVA helps professors stay organized, respond faster, and keep courses running smoothly—without burning out.
+        Choose a weekly support plan or start with a small bundle and scale up.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Core Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Email & Student Communications</h3>
+          <ul>
+            <li>Inbox triage + priority sorting</li>
+            <li>Draft replies to student questions</li>
+            <li>Follow-up tracking (who needs what, by when)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>LMS & Course Setup</h3>
+          <ul>
+            <li>Module organization and housekeeping</li>
+            <li>Due dates, timetables, calendar alignment</li>
+            <li>Announcements + weekly “what to do” guidance</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Discussion Support</h3>
+          <ul>
+            <li>Draft instructor replies and prompts</li>
+            <li>Moderation support and escalation notes</li>
+            <li>Consistency with course tone and rubric</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Feedback & Tutoring Support</h3>
+          <ul>
+            <li>Rubric-aligned feedback drafts</li>
+            <li>Editing support for clarity + structure</li>
+            <li>Optional tutoring templates and study guides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#E6EEF5;">
+    <div class="wrap">
+      <h2>Weekly Plans</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="tag">Starter</div>
+          <h3>5 hours / week</h3>
+          <p class="price">$150<span style="font-size:16px; font-weight:600;">/week</span></p>
+          <ul>
+            <li>Inbox management (light)</li>
+            <li>1–2 announcements/week</li>
+            <li>Basic student Q&amp;A drafts</li>
+            <li>Weekly status update</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="tag">Most Popular</div>
+          <h3>10 hours / week</h3>
+          <p class="price">$275<span style="font-size:16px; font-weight:600;">/week</span></p>
+          <ul>
+            <li>Inbox + student messages</li>
+            <li>Weekly timetable + reminders</li>
+            <li>Discussion support</li>
+            <li>Feedback drafts (limited)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="tag">Department Partner</div>
+          <h3>15 hours / week</h3>
+          <p class="price">$375<span style="font-size:16px; font-weight:600;">/week</span></p>
+          <ul>
+            <li>Full course shell organization</li>
+            <li>Announcements + weekly overviews</li>
+            <li>Feedback drafts (higher volume)</li>
+            <li>Priority turnaround</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top:18px; color:#4A4A4A; line-height:1.6;">
+        <strong>Note:</strong> Pricing is a starting point. Courses with heavy grading weeks or multiple sections may require a custom plan.
+      </p>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <div class="card">
+          <p><strong>Do you write posts as the professor?</strong><br>
+          I can draft responses for you to review and post, aligned with your tone and the rubric.</p>
+        </div>
+        <div class="card">
+          <p><strong>How do we work together?</strong><br>
+          We use a shared task list (Google Doc/Notion) and a weekly workflow. You delegate; I execute and report.</p>
+        </div>
+        <div class="card">
+          <p><strong>Can you work with Canvas/Blackboard/Moodle?</strong><br>
+          Yes. We’ll follow your institution’s access rules and keep everything secure.</p>
+        </div>
+        <div class="card">
+          <p><strong>How do I start?</strong><br>
+          Email me and I’ll send a short intake form + onboarding checklist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Ready to lighten your workload?</h2>
+      <p style="opacity:0.92; line-height:1.6;">
+        Send a message and tell me what you teach, your LMS, and where you need support first.
+      </p>
+      <a class="btn" href="mailto:hello@facultyva.com?subject=FacultyVA%20Inquiry&body=Hi%20FacultyVA,%0A%0AI%20teach:%20%0ALMS:%20%0ATop%203%20tasks%20I%20need%20help%20with:%20%0A%0AThanks!">Email FacultyVA</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 FacultyVA • <a href="index.html">Home</a> • <a href="services.html">Services</a></p>
+  </footer>
+
+</body>
+</html>
