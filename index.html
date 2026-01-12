@@ -23,9 +23,39 @@
         .cta a { background:#0066cc; color:white; padding:15px 30px; font-size:20px; border-radius:8px; text-decoration:none; }
 
         footer { background:#003366; color:white; text-align:center; padding:20px; margin-top:50px; }
+        .nav {
+  background:#0D1A26;
+  color:#fff;
+  padding: 14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.nav-left { display:flex; align-items:center; gap:12px; }
+.nav img { height: 38px; width:auto; }
+.nav-links { display:flex; gap:16px; flex-wrap:wrap; }
+.nav-links a { color:#fff; text-decoration:none; font-weight:600; opacity:0.95; }
+.nav-links a:hover { text-decoration:underline; }
+@media (max-width:520px){
+  .nav { flex-direction:column; align-items:flex-start; }
+  .nav-links { gap:12px; }
+}
+
     </style>
 </head>
 <body>
+<div class="nav">
+  <div class="nav-left">
+    <img src="logo.png" alt="FacultyVA Logo">
+    <div style="font-weight:800;">FacultyVA</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services & Pricing</a>
+    <a href="mailto:hello@facultyva.com">Contact</a>
+  </div>
+</div>
 
 <header>
     <h1>FacultyVA</h1>
